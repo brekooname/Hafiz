@@ -1,0 +1,47 @@
+﻿@section Scripts {
+
+    <script>
+        function enableRange() {
+            var range1 = document.getElementById("fromRange");
+            var range2 = document.getElementById("toRange");
+            range1.disabled = false;
+            range2.disabled = false;
+        }
+
+        function disableRange() {
+            var range1 = document.getElementById("fromRange");
+            var range2 = document.getElementById("toRange");
+            range1.disabled = true;
+            range2.disabled = true;
+        }
+    </script>
+} 
+
+<h1>What do you want to arrange?</h1>
+
+<form method="POST">
+    <div class="form-check">
+        <select class="form-control" id="surah" name="surah">
+            @for (int i = 0; i < Model.Length; i++)
+            {
+                <option value="@(i+1)">@(i+1). @Model[i]</option>
+            }
+        </select>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="type" value="1" id="typeEntire" checked="checked" onclick="disableRange()" />
+            <label class="form-check-label" for="typeEntire">Entire Surah</label>
+        </div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="type" value="2" id="typeRange" onclick="enableRange()" />
+            <label class="form-check-label" for="typeRange">Ayaat Range</label><br />
+        </div><br />
+
+        <label class="form-check-label">For Ayaat Range option enter beginning and end ayat:</label>
+        <input type="number" name="fromRange" id="fromRange" disabled="disabled" />
+        <label class="form-check-label">To:</label>
+        <input type="number" name="toRange" id="toRange" disabled="disabled" /><br />
+
+        <input type="submit" class="btn btn-primary" />
+    </div>
+</form>
+

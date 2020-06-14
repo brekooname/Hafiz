@@ -1,0 +1,89 @@
+﻿@section Scripts {
+    <script>
+        var audioPlayer = document.getElementById("audio");
+        var url = "http://soundflux.islamicfinder.org/if-soundflux/api/v1/stream//quran/rahman-sudais/";
+        var surah = @Model.Index;
+        updateSRC();
+        
+        function isLoopingChanged() {
+            if ($('#isLoop').prop("checked") == true) {
+                audioPlayer.loop = true;
+            } else {
+                audioPlayer.loop = false;
+            }
+        }
+
+        function updateSRC() {
+            var s = leadingZero(surah);
+            var src = url + s + ".mp3";
+            console.log(src);
+            audioPlayer.src = src;
+        }
+
+        function leadingZero(num) {
+            var s = num + "";
+            while (s.length < 3) {
+                s = "0" + s;
+            }
+            return s;
+        }
+
+    </script>
+}
+
+<link href="~/css/Fonts/stylesheet.css" rel="stylesheet"/>
+
+<h1>@(Model.Index). Surah @Model.EN_Name</h1>
+<h2>Juz @Model.Juz</h2>
+<h2>@Model.Ayaat.Length Ayaat</h2>
+
+
+
+
+<div class="row" style="clear: both;">
+    <div class="col-4 mt-3">
+        <div class="position-fixed">
+            <p>Listen to this Surah</p>
+            <p>Reciter: Abdurrahman As-Sudais</p>
+            <form>
+                <input type="checkbox" name="isLoop" id="isLoop" onclick="isLoopingChanged()"/>
+                <label for="isLoop">Loop</label>
+
+            </form>
+
+            <audio controls id="audio"></audio>
+        </div>
+        
+
+    </div>
+
+
+
+    <div class="col-8">
+        <ul class="list-group">
+            @for (int i=0; i<Model.Ayaat.Length; i++)
+            {
+            <li class="list-group-item">
+                <p style="text-align: left; float: left;">@(i+1)</p>
+                <p class="quran" style="text-align: right; float: right; font-size: 24px;">@Model.Ayaat[i].Text</p>
+            </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col">
+        @if (Model.Index > 1)
+        {
+            <a class="btn btn-primary" asp-controller="Memorize" asp-action="Read" asp-route-surah="@(Model.Index-1)">Previous Surah</a>
+        }
+        @if (Model.Index < 114)
+        {
+            <a class="btn btn-primary" style="float: right;" asp-controller="Memorize" asp-action="Read" asp-route-surah="@(Model.Index+1)">Next Surah</a>
+        }
+    </div>
+</div>
+
+
+

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hafiz", "Hafiz\Hafiz.csproj", "{76E1AF23-E407-49F7-96C1-24B6F2F4269E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuranXML", "QuranXML\QuranXML.csproj", "{A70E1D43-5B18-49EF-A375-755D105E7876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLFormatter", "XMLFormatter\XMLFormatter.csproj", "{4543536B-4676-40BA-9C98-83521CD09F3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E1AF23-E407-49F7-96C1-24B6F2F4269E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E1AF23-E407-49F7-96C1-24B6F2F4269E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E1AF23-E407-49F7-96C1-24B6F2F4269E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E1AF23-E407-49F7-96C1-24B6F2F4269E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70E1D43-5B18-49EF-A375-755D105E7876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70E1D43-5B18-49EF-A375-755D105E7876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70E1D43-5B18-49EF-A375-755D105E7876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70E1D43-5B18-49EF-A375-755D105E7876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4543536B-4676-40BA-9C98-83521CD09F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4543536B-4676-40BA-9C98-83521CD09F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4543536B-4676-40BA-9C98-83521CD09F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4543536B-4676-40BA-9C98-83521CD09F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37BE6BD1-1590-41FE-A1F8-520A3F0ECFCB}
+	EndGlobalSection
+EndGlobal

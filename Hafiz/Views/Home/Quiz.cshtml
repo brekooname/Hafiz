@@ -1,0 +1,26 @@
+﻿@section Scripts {
+    <script>
+        var url = "/Memorize/Quiz?surah=";
+
+        function onChange() {
+            var val = document.getElementById('surah').value;
+            var src = url + val;
+            $('#submit').attr("href", src);
+        }
+    </script>
+}
+
+<h1>Which Surah would like to take a quiz on?</h1>
+
+<form>
+    <div class="form-check">
+        <select class="form-control" name="surah" id="surah" onchange="onChange()">
+            @for (int i = 0; i < Model.Length; i++)
+            {
+                <option value="@(i+1)">@(i+1). @Model[i]</option>
+            }
+
+        </select>
+        <a class="btn btn-primary mt-2" href="/Memorize/Quiz?surah=1" id="submit">Submit</a>
+    </div>
+</form>

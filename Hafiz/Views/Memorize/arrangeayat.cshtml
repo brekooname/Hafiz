@@ -1,0 +1,82 @@
+﻿@section Scripts {
+
+    <script src="https://cdn.jsdelivr.net/gh/RubaXa/Sortable/Sortable.min.js">
+    </script>
+
+    <script>
+        var drop1 = Sortable.create(demo1, {
+            animation: 100,
+            group: 'list-1',
+            draggable: '.list-group-item',
+            handle: '.list-group-item',
+            sort: true,
+            filter: '.sortable-disabled',
+            chosenClass: 'active',
+            swap: true,
+
+        });
+
+        function submit() {
+            drop1.option('disabled', true);
+
+            var grid = document.getElementById("demo1");
+            var words = grid.getElementsByClassName("list-group-item");
+
+            var correctWords = document.getElementById("answers").getElementsByClassName("list-group-item");
+
+            var mistakes = 0;
+            var len = words.length;
+            for (var i = 0; i < len; i++) {
+                if (words[i].innerHTML.valueOf() === correctWords[len - 1 - i].innerHTML.valueOf()) {
+                    words[i].style.color = 'green';
+                } else {
+                    console.log(words[i].innerHTML);
+                    console.log(correctWords[i].innerHTML);
+                    words[i].style.color = 'red';
+                    mistakes++;
+                }
+            }
+
+            document.getElementById("mistakes").innerHTML = mistakes;
+            document.getElementById("correction").style.display = 'inline';
+        }
+    </script>
+}
+
+<link rel="stylesheet" href="~/css/Fonts/stylesheet.css" />
+
+<h1>Arrange the words in the order of Surah Ayat</h1>
+
+<div class="row">
+    <div class="col">
+        <div id="demo1" class="list-group" style="display: grid; grid-template-columns: repeat(9, 1fr);">
+            @foreach (string word in Model.ScrambledWords)
+            {
+                <div class="list-group-item quran" style="font-size: 20px;">@word</div>
+            }
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col" id="correction" style="display: none;">
+            <h2>Mistakes: <b id="mistakes"></b></h2>
+            <h2>Actual ayat:</h2>
+            <p class="quran">@Model.Text</p>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col">
+            <button onclick="submit()" type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+    <div style="display: none;" id="answers">
+        @foreach (string word in Model.Words)
+        {
+            <div class="list-group-item quran" style="font-size: 20px;">@word</div>
+        }
+    </div>
+</div>
+

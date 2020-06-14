@@ -1,0 +1,93 @@
+﻿@section Scripts {
+
+    <script src="https://cdn.jsdelivr.net/gh/RubaXa/Sortable/Sortable.min.js">
+    </script>
+    
+    <script>
+        var drop1 = Sortable.create(demo1, {
+            animation: 100,
+            group: 'list-1',
+            draggable: '.list-group-item',
+            handle: '.list-group-item',
+            sort: true,
+            filter: '.sortable-disabled',
+            chosenClass: 'active'
+            
+        });
+
+        function submit() {
+
+            drop1.option('disabled', true);
+            console.log('clicked');
+
+            var list = document.getElementById("demo1").getElementsByClassName("list-group-item");
+            var properPar = document.getElementById("par");
+            properPar.classList.add("col");
+
+            var proper = document.getElementById("proper");
+            proper.style.display = 'inline';
+
+            var properChildren = proper.getElementsByClassName("list-group-item");
+
+            
+            var mistakes = 0;
+            var len = list.length;
+            for (i = 0; i < len; i++) {
+                var st = list[i].innerHTML;
+                console.log(st);
+                console.log(properChildren[i].innerHTML);
+                if (list[i].innerHTML === properChildren[i].innerHTML) {
+                    list[i].style.color = 'green';
+                } else {
+                    list[i].style.color = 'red';
+                    mistakes++;
+                }
+                
+            }
+
+            document.getElementById("mistakesHeader").style.display = 'inline';
+            document.getElementById("mistakes").innerHTML = mistakes;
+        }
+
+        function tryAgain() {
+            location.reload();
+        }
+    </script>
+}
+
+
+<link rel="stylesheet" href="~/css/Fonts/stylesheet.css" />
+
+
+<h1>Arrange Ayaats of Surah @Model.EN_Name (@Model.Index)</h1>
+<h2 class="mt-5" id="mistakesHeader" style="display: none;">Mistakes: <b id="mistakes"></b></h2>
+<div class="row">
+    <div class="col">
+        <ul class="list-group" id="demo1">
+            @foreach (QuranXML.Ayat item in Model.ScrambledAyaat)
+            {
+                <li class="list-group-item quran">@item.Text</li>
+            }
+        </ul>
+    </div>
+
+    <div id="par">
+        <ul class="list-group" id="proper" style="display: none;">
+            @foreach (QuranXML.Ayat item in Model.Ayaat)
+            {
+                <li class="list-group-item quran">@item.Text</li>
+            }
+        </ul>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col text-center">
+        <button onclick="submit()" type="button" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="col text-center">
+        <button class="btn btn-primary" onclick="tryAgain()">Try Again</button>
+    </div>
+</div>
+
+
