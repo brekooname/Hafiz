@@ -114,9 +114,9 @@ C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Vie
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Memorize\Read.cshtml.g.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Arrange.cshtml.g.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Memorize\Quiz.cshtml.g.cs
-C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Debug\netcoreapp3.1\QuranXML.dll
-C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Debug\netcoreapp3.1\QuranXML.pdb
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Read.cshtml.g.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Quiz.cshtml.g.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Debug\netcoreapp3.1\custom-quran.xml
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Debug\netcoreapp3.1\QuranCore.dll
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Debug\netcoreapp3.1\QuranCore.pdb

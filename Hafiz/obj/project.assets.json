@@ -1798,14 +1798,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "QuranXML/1.0.0": {
+      "QuranCore/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "compile": {
-          "bin/placeholder/QuranXML.dll": {}
+          "bin/placeholder/QuranCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/QuranXML.dll": {}
+          "bin/placeholder/QuranCore.dll": {}
         }
       }
     }
@@ -6005,16 +6005,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "QuranXML/1.0.0": {
+    "QuranCore/1.0.0": {
       "type": "project",
-      "path": "../QuranXML/QuranXML.csproj",
-      "msbuildProject": "../QuranXML/QuranXML.csproj"
+      "path": "../QuranXML/QuranCore.csproj",
+      "msbuildProject": "../QuranXML/QuranCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "QuranXML >= 1.0.0"
+      "QuranCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6050,8 +6050,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranXML.csproj": {
-              "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranXML.csproj"
+            "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj": {
+              "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj"
             }
           }
         }

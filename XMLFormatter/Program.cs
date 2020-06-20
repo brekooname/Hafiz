@@ -1,4 +1,4 @@
-﻿using QuranXML;
+﻿using QuranCore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,35 +11,35 @@ namespace XMLFormatter
         {
             Console.WriteLine("Starting!");
 
-            QuranXML.Properties p = await GetEnglishNamesProperties("surah_english_names.txt");
-            QuranXML.Properties arText = await GetArabicTextAsync("quran-uthmani.txt");
-            QuranXML.Properties juz = await GetJuzAsync("list-juz.txt");
+            QuranCore.Properties p = await GetEnglishNamesProperties("surah_english_names.txt");
+            QuranCore.Properties arText = await GetArabicTextAsync("quran-uthmani.txt");
+            QuranCore.Properties juz = await GetJuzAsync("list-juz.txt");
 
-            QuranXML.Quran q = new QuranXML.Quran();
-            QuranXML.Convert.AddProperties(p, ref q);
-            QuranXML.Convert.AddProperties(arText, ref q);
-            QuranXML.Convert.AddProperties(juz, ref q);
-            QuranXML.Convert.WriteQuranXML(q, @"C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\custom-quran.xml");
+            QuranCore.Quran q = new QuranCore.Quran();
+            QuranCore.Convert.AddProperties(p, ref q);
+            QuranCore.Convert.AddProperties(arText, ref q);
+            QuranCore.Convert.AddProperties(juz, ref q);
+            QuranCore.Convert.WriteQuranXML(q, @"C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\custom-quran.xml");
 
             Console.WriteLine("Done");
             Console.ReadLine();
         }
 
-        static async Task<QuranXML.Properties> GetEnglishNamesProperties(string path) {
-            QuranXML.Properties properties = new QuranXML.Properties();
+        static async Task<QuranCore.Properties> GetEnglishNamesProperties(string path) {
+            QuranCore.Properties properties = new QuranCore.Properties();
 
             string[] lines = await System.IO.File.ReadAllLinesAsync(path);
 
             for (int i=0; i<lines.Length; i++)
             {
-                QuranXML.Property index = new QuranXML.Property();
+                QuranCore.Property index = new QuranCore.Property();
                 index.Name = "Index";
                 index.Index = i+1;
                 index.Type = PropertyType.Surah;
                 index.Value = i+1;
                 properties.List.Add(index);
 
-                QuranXML.Property enName = new QuranXML.Property();
+                QuranCore.Property enName = new QuranCore.Property();
                 enName.Name = "EN_Name";
                 enName.Index = i+1;
                 enName.Type = PropertyType.Surah;
@@ -54,7 +54,7 @@ namespace XMLFormatter
 
         static async Task<Properties> GetArabicTextAsync(string path)
         {
-            QuranXML.Properties properties = new Properties();
+            QuranCore.Properties properties = new Properties();
 
             string[] lines = await System.IO.File.ReadAllLinesAsync(path);
 
@@ -70,7 +70,7 @@ namespace XMLFormatter
                     int ayat = Int32.Parse(components[1]);
 
                     //Set index property
-                    QuranXML.Property indexProp = new Property();
+                    QuranCore.Property indexProp = new Property();
                     indexProp.Type = PropertyType.Ayat;
                     indexProp.Index = surah;
                     indexProp.Name = "Index";
@@ -79,7 +79,7 @@ namespace XMLFormatter
                     properties.List.Add(indexProp);
 
                     //Set the text property
-                    QuranXML.Property p = new QuranXML.Property();
+                    QuranCore.Property p = new QuranCore.Property();
                     p.Type = PropertyType.Ayat;
                     p.Index = surah;
                     p.Name = "Text";

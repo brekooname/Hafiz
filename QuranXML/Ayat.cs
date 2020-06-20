@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace QuranXML
+namespace QuranCore
 {
     
     public class Ayat
@@ -10,6 +10,9 @@ namespace QuranXML
 
         [System.Xml.Serialization.XmlAttribute]
         public string Text { get; set; }
+
+        [System.Xml.Serialization.XmlAttribute]
+        public bool Repeated { get; set; }
 
         public Ayat()
         {

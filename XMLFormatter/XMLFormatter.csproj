@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuranXML\QuranXML.csproj" />
+    <ProjectReference Include="..\QuranXML\QuranCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranXML.csproj",
-      "projectName": "QuranXML",
-      "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranXML.csproj",
+      "projectUniqueName": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj",
+      "projectName": "QuranCore",
+      "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj",
       "packagesPath": "C:\\Users\\Abdullah Yousuf\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\obj\\",
       "projectStyle": "PackageReference",

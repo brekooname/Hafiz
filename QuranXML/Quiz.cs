@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuranXML
+namespace QuranCore
 {
     public class Quiz
     {

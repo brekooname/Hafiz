@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hafiz", "Hafiz\Hafiz.csproj", "{76E1AF23-E407-49F7-96C1-24B6F2F4269E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuranXML", "QuranXML\QuranXML.csproj", "{A70E1D43-5B18-49EF-A375-755D105E7876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuranCore", "QuranXML\QuranCore.csproj", "{A70E1D43-5B18-49EF-A375-755D105E7876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLFormatter", "XMLFormatter\XMLFormatter.csproj", "{4543536B-4676-40BA-9C98-83521CD09F3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLFormatter", "XMLFormatter\XMLFormatter.csproj", "{4543536B-4676-40BA-9C98-83521CD09F3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

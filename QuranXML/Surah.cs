@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace QuranXML
+namespace QuranCore
 {
     
     public class Surah : SurahBase
@@ -78,36 +78,45 @@ namespace QuranXML
 
             //Indexes for ayaat
             HashSet<int> indices = new HashSet<int>();
-            while (indices.Count < COUNT)
-            {
-                indices.Add(random.Next(1, Ayaat.Count));
-            }
+            HashSet<int> usedChoiceIndex = new HashSet<int>();
+            HashSet<int> scrambledIndices = new HashSet<int>();
+
 
             quiz.Questions = new QuizQuestion[COUNT];
+
+
             for (int i=0; i<COUNT; i++)
             {
+                //Index for ayat
+                int index = random.Next(1, Ayaat.Count);
+                while(Ayaat[index].Repeated || !indices.Add(index))
+                {
+                    index = random.Next(1, Ayaat.Count);
+                }
+
                 quiz.Questions[i] = new QuizQuestion();
-                quiz.Questions[i].Text = Ayaat[indices.ElementAt(i)].Text;
+                quiz.Questions[i].Text = Ayaat[index].Text;
 
                 quiz.Questions[i].Choices = new string[CHOICES_PER_QUESTION];
 
-                HashSet<int> usedChoiceIndex = new HashSet<int>();
-                int ayatIndex = indices.ElementAt(i);
-                usedChoiceIndex.Add(ayatIndex);
-                ayatIndex++;
-                usedChoiceIndex.Add(ayatIndex);
+               
+                //Add index of question ayat
+                usedChoiceIndex.Add(index);
+                //Add index of ayat after the selected question ayat
+                usedChoiceIndex.Add(++index);        
                 
-                HashSet<int> scrambledIndices = new HashSet<int>();
                 int scrambledIndex = random.Next(0, CHOICES_PER_QUESTION);
-                quiz.Questions[i].Choices[scrambledIndex] = Ayaat[ayatIndex].Text;
+                quiz.Questions[i].Choices[scrambledIndex] = Ayaat[index].Text;
                 quiz.Questions[i].CorrectChoice = scrambledIndex;
+                bool isRepeating = Ayaat[index].Repeated;
                 scrambledIndices.Add(scrambledIndex);
                 
                 while (scrambledIndices.Count < CHOICES_PER_QUESTION)
                 {
-                    while (!usedChoiceIndex.Add(ayatIndex = random.Next(1, Ayaat.Count+1)))
+                    index = random.Next(1, Ayaat.Count + 1);
+                    while ((isRepeating && Ayaat[index].Repeated) || !usedChoiceIndex.Add(index))
                     {
-                        
+                        index = random.Next(1, Ayaat.Count + 1);
                     }
 
                     while(!scrambledIndices.Add(scrambledIndex = random.Next(0, CHOICES_PER_QUESTION)))
@@ -115,7 +124,13 @@ namespace QuranXML
 
                     }
 
-                    quiz.Questions[i].Choices[scrambledIndex] = Ayaat[ayatIndex].Text;
+                    quiz.Questions[i].Choices[scrambledIndex] = Ayaat[index].Text;
+                }
+
+                if (i != COUNT - 1)
+                {
+                    usedChoiceIndex.Clear();
+                    scrambledIndices.Clear();
                 }
             }
 

@@ -82,8 +82,6 @@ C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\ru\Micr
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranXML.dll
-C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranXML.pdb
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.csprojAssemblyReference.cache
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.csproj.CoreCompileInputs.cache
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.MvcApplicationPartsAssemblyInfo.cache
@@ -120,3 +118,5 @@ C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.d
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.pdb
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.genruntimeconfig.cache
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\custom-quran.xml
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranCore.dll
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranCore.pdb

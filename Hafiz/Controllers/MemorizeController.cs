@@ -12,7 +12,7 @@ namespace Hafiz.Controllers
         
         private Random RandomGen;
 
-        public static QuranXML.ConcurrentQuran AlQuran;
+        public static QuranCore.ConcurrentQuran AlQuran;
 
         public IActionResult Index()
         {
@@ -30,7 +30,7 @@ namespace Hafiz.Controllers
             {
                 return StatusCode(404);
             }
-            QuranXML.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange();
+            QuranCore.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange();
             model.Scramble(RandomGen);
             return View(model);
         }
@@ -42,7 +42,7 @@ namespace Hafiz.Controllers
                 return StatusCode(404);
             }
 
-            QuranXML.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange(begin, end);
+            QuranCore.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange(begin, end);
             if (model == null) return StatusCode(404);
             model.Scramble(RandomGen);
             return View("ArrangeSurah", model);
@@ -54,7 +54,7 @@ namespace Hafiz.Controllers
             {
                 return StatusCode(404);
             }
-            QuranXML.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange();
+            QuranCore.ArrangeSurah model = AlQuran.Suwar[surah].ConvertToArrange();
             return View(model);
         }
 
@@ -64,7 +64,7 @@ namespace Hafiz.Controllers
             {
                 return StatusCode(404);
             }
-            QuranXML.Quiz model = AlQuran.Suwar[surah].GenerateQuiz(RandomGen);
+            QuranCore.Quiz model = AlQuran.Suwar[surah].GenerateQuiz(RandomGen);
 
             return View(model);
         }
@@ -76,7 +76,7 @@ namespace Hafiz.Controllers
 
         public static void LoadQuran()
         {
-            AlQuran = (QuranXML.ConcurrentQuran)QuranXML.Convert.FromCustomXML("custom-quran.xml", QuranXML.QuranType.Concurrent);
+            AlQuran = (QuranCore.ConcurrentQuran)QuranCore.Convert.FromCustomXML("custom-quran.xml", QuranCore.QuranType.Concurrent);
         }
     }
 }

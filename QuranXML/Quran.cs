@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace QuranXML
+namespace QuranCore
 {
     
     public class Quran

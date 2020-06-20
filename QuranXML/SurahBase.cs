@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace QuranXML
+namespace QuranCore
 {
     public abstract class SurahBase
     {
