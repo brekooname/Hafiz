@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj": {}
+    "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj": {
+    "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj",
+        "projectUniqueName": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj",
         "projectName": "QuranCore",
-        "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj",
+        "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj",
         "packagesPath": "C:\\Users\\Abdullah Yousuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\obj\\",
+        "outputPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

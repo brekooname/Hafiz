@@ -1,9 +1,0 @@
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\bin\Debug\netstandard2.1\QuranCore.deps.json
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\bin\Debug\netstandard2.1\QuranCore.dll
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\bin\Debug\netstandard2.1\QuranCore.pdb
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.csprojAssemblyReference.cache
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.csproj.CoreCompileInputs.cache
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.AssemblyInfoInputs.cache
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.AssemblyInfo.cs
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.dll
-C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Debug\netstandard2.1\QuranCore.pdb

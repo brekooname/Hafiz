@@ -6007,8 +6007,8 @@
     },
     "QuranCore/1.0.0": {
       "type": "project",
-      "path": "../QuranXML/QuranCore.csproj",
-      "msbuildProject": "../QuranXML/QuranCore.csproj"
+      "path": "../QuranCore/QuranCore.csproj",
+      "msbuildProject": "../QuranCore/QuranCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6050,8 +6050,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj": {
-              "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranXML\\QuranCore.csproj"
+            "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj": {
+              "projectPath": "C:\\Users\\Abdullah Yousuf\\Documents\\Hafiz\\QuranCore\\QuranCore.csproj"
             }
           }
         }
