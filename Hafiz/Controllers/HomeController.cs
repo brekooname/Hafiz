@@ -64,6 +64,19 @@ namespace Hafiz.Controllers
             return View(SurahNameCache);
         }
 
+        public IActionResult FillInTheBlanks()
+        {
+            if (SurahNameCache == null)
+            {
+                SurahNameCache = new string[114];
+                for (int i = 0; i < MemorizeController.AlQuran.Suwar.Count; i++)
+                {
+                    SurahNameCache[i] = MemorizeController.AlQuran.Suwar[i + 1].EN_Name;
+                }
+            }
+            return View(SurahNameCache);
+        }
+
         
         public IActionResult Read()
         {

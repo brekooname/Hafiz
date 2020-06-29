@@ -13,6 +13,8 @@ namespace QuranCore
 
         public int CorrectChoice { get; set; }
 
+        public int TextAyat { get; set; }
+
         public QuizQuestion()
         {
 

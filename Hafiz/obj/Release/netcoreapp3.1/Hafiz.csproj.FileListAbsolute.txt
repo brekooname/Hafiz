@@ -120,3 +120,5 @@ C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Hafiz.g
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\custom-quran.xml
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranCore.dll
 C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\bin\Release\netcoreapp3.1\QuranCore.pdb
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Razor\Views\Home\FillInTheBlanks.cshtml.g.cs
+C:\Users\Abdullah Yousuf\Documents\Hafiz\Hafiz\obj\Release\netcoreapp3.1\Razor\Views\Memorize\FillBlanks.cshtml.g.cs

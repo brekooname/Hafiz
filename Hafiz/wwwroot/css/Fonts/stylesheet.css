@@ -13,11 +13,6 @@
 
 @font-face {
     font-family: 'Uthman Naskh';
-    src: local('KFGQPC Uthman Taha Naskh'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff2/UthmanTN1%20Ver10.woff2) format('woff2'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff/UthmanTN1%20Ver10.woff) format('woff');
-}
-
-@font-face {
-    font-family: 'Uthman Naskh';
     font-weight: bold;
     src: local('KFGQPC Uthman Taha Naskh Bold'), local('KFGQPCUthmanTahaNaskh-Bold'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff2/UthmanTN1B%20Ver10.woff2) format('woff2'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff/UthmanTN1B%20Ver10.woff) format('woff');
 }
@@ -32,6 +27,11 @@
     src: local('KFGQPC Arabic Symbols 01'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff2/Symbols1_Ver02.woff2) format('woff2'), url(https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff/Symbols1_Ver02.woff) format('woff');
 }
 
+@font-face {
+    font-family: 'KFGQPC Uthman Taha Naskh';
+    src: url('UthmanTN1 Ver10.otf') format('opentype');
+}
+
 .quran {
-    font-family: 'Uthman Naskh'
+    font-family: "KFGQPC Uthman Taha Naskh";
 }

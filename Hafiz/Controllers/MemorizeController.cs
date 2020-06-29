@@ -69,6 +69,16 @@ namespace Hafiz.Controllers
             return View(model);
         }
 
+        public IActionResult FillBlanks(int surah)
+        {
+            if (surah < 1 || surah > 114)
+            {
+                return StatusCode(404);
+            }
+            QuranCore.Quiz model = AlQuran.Suwar[surah].GenerateFillInTheBlanksQuiz(ref RandomGen);
+            return View(model);
+        }
+
         public MemorizeController()
         {
             RandomGen = new Random();

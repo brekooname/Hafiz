@@ -7,3 +7,12 @@ C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Release\netstandard2.1\Qur
 C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Release\netstandard2.1\QuranCore.AssemblyInfo.cs
 C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Release\netstandard2.1\QuranCore.dll
 C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranXML\obj\Release\netstandard2.1\QuranCore.pdb
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\bin\Release\netstandard2.1\QuranCore.deps.json
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\bin\Release\netstandard2.1\QuranCore.dll
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\bin\Release\netstandard2.1\QuranCore.pdb
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.csprojAssemblyReference.cache
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.csproj.CoreCompileInputs.cache
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.AssemblyInfoInputs.cache
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.AssemblyInfo.cs
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.dll
+C:\Users\Abdullah Yousuf\Documents\Hafiz\QuranCore\obj\Release\netstandard2.1\QuranCore.pdb

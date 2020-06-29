@@ -137,6 +137,36 @@ namespace QuranCore
             return quiz;
         }
 
+        public Quiz GenerateFillInTheBlanksQuiz(ref Random random)
+        {
+            Quiz quiz = new Quiz(Index, EN_Name);
+
+            int COUNT = (5 < Ayaat.Count) ? 5 : Ayaat.Count - 1;
+
+            //Indexes for ayaat
+            HashSet<int> indices = new HashSet<int>();
+
+
+            quiz.Questions = new QuizQuestion[COUNT];
+
+            for (int i = 0; i < COUNT; i++)
+            {
+                //Index for ayat
+                int index = random.Next(1, Ayaat.Count);
+                while (Ayaat[index].Repeated || !indices.Add(index))
+                {
+                    index = random.Next(1, Ayaat.Count);
+                }
+
+                quiz.Questions[i] = new QuizQuestion();
+
+
+                Ayaat[index].MakeFillInTheBlankQestion(ref quiz.Questions[i], ref random);
+            }
+
+            return quiz;
+        }
+
     }
 
     public class ConcurrentSurah : Surah
